@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <title>Tworzenie wykresów</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			body {
+				font-family:arial;
+				margin: 10px;
+			}
+			h1 {
+				color: #113C8A;
+				font-size:20px;
+			}
+			h2 {
+				color: #113C8A;
+				font-size:16px;
+				margin-top: 40px;
+			}
+			p, table {
+				font-size: 14px;
+			}
+			table {
+				border-color: #ddd;
+				border-style: solid;
+				font-family: monospaced;
+			}
+		</style>
+    </head>
+    <body>
+		<h1>1. Tworzenie wykresów funkcji</h1>
+		<h2 id="dodawanie">1.1. Dodawanie wykresu</h2>
+		<p>Zależnie od tego, czy celem jest dodanie wykresu funkcji jednej zmiennej czy dwóch zmiennych na początku należy utworzyć odpowiedni dokument - okno wykresu. Odpowiednio dla funkcji jednej zmiennej <b>Nowe okno wykresu 2d</b> <img src="images/new2d.png" />, a dla funkcji dwóch zmiennych <b>Nowe okno wykresu 3d</b> <img src="images/new3d.png" />. Odpowiednią opcję znaleźć można w menu <b>Plik</b> lub na pasku narzędzi programu.</p>
+		<center><img src="images/tworzenie_okna.png" /><br />Tworzenie nowego okna wykresu.</center>
+		<p>W gotowym oknie wykres można dodać na dwa sposoby. Pierwszą - najszybszą metodą jest wpisanie formuły funkcji w pasku szybkiego wprowadzania formuł, znajdującym się tuż pod obiektem wykresu. Po wpisaniu formuły należy ją zatwierdzić klawiszem Enter.</p>
+		<center><img src="images/pasek.png" /><br />Pasek szybkiego wprowadzania formuł.</center>
+		<p>Drugą metodą dodania wykresu do aktywnego okna jest opcja <b>Dodaj wykres</b> <img src="images/graph_add.png" />. Jest ona dostępna w menu <b>Wykres</b> oraz w menu kontekstowym listy wykresów.</p>
+		<center><img src="images/dodaj_wykres.png" /><br />Opcja <b>Dodaj wykres</b>.</center>
+		<p>Zależnie od typu wykresu utworzone zostanie odpowiednie okno, w którym poza formułą matematyczną funkcji określić można kolor oraz przedział kreślenia.</p>
+		<center><img src="images/edycja2d.png" /><br />Okno dodawania funkcji jednej zmiennej.</center>
+		<p>W przypadku wykresu funkcji dwóch zmiennych dodatkowo możliwe jest określenie przezroczystości, jakości oraz metody kreślenia wykresu.</p>
+		<center><img src="images/edycja3d.png" /><br />Okno dodawania funkcji dwóch zmiennych.</center>
+		<p>UWAGA: określenie wysokiej jakości kreślenia funkcji 3d, szczególnie w przypadku ich większej ilości może spowodować zauważalne spowolnienie działania programu.</p>
+		<p>Formuły wprowadzać należy w formie tekstowej z wykorzystaniem operatorów i funkcji opisanych w dalszej części. Zależnie od typu funkcji, odpowiednio możliwe jest użycie zmiennych. Dla funkcji jednej zmiennej: <b>x</b>, dla funkcji dwóch zmiennych: <b>x</b> oraz <b>y</b>.</p>
+		
+		<h2 id="operatory">1.2. Operatory</h2>
+		<p>
+			<center>
+				<table border="1" cellpadding="5">
+					<thead>
+						<tr>
+							<th>Operator</th>
+							<th>Znaczenie</th>
+							<th>Przykład użycia</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="center">+</td>
+							<td>dodawanie</td>
+							<td>3x+2y</td>
+						</tr>
+						<tr>
+							<td align="center">-</td>
+							<td>odejmowanie</td>
+							<td>x-2</td>
+						</tr>
+						<tr>
+							<td align="center">*</td>
+							<td>mnożenie</td>
+							<td>2*x (lub w zapisie skróconym: 2x)</td>
+						</tr>
+						<tr>
+							<td align="center">/</td>
+							<td>dzielenie</td>
+							<td>2x/3y</td>
+						</tr>
+						<tr>
+							<td align="center">^</td>
+							<td>potęgowanie</td>
+							<td>x^2</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+		</p>
+		
+		<h2 id="funkcje">1.3. Funkcje</h2>
+		<p>
+			<center>
+				<table border="1" cellpadding="5">
+					<thead>
+						<tr>
+							<th>Funkcja</th>
+							<th>Znaczenie</th>
+							<th>Przykład użycia</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="center">sin</td>
+							<td>sinus</td>
+							<td>sin(3x+2y)</td>
+						</tr>
+						<tr>
+							<td align="center">cos</td>
+							<td>cosinus</td>
+							<td>cos(x-2)</td>
+						</tr>
+						<tr>
+							<td align="center">tan</td>
+							<td>tangens</td>
+							<td>tan(2x)</td>
+						</tr>
+						<tr>
+							<td align="center">ctan</td>
+							<td>cotangens</td>
+							<td>ctan(2x/3y)</td>
+						</tr>
+						<tr>
+							<td align="center">hsin</td>
+							<td>sinus hiperboliczny</td>
+							<td>hsin(x/pi)</td>
+						</tr>
+						<tr>
+							<td align="center">hcos</td>
+							<td>cosinus hiperboliczny</td>
+							<td>hcos(x-2)</td>
+						</tr>
+						<tr>
+							<td align="center">htan</td>
+							<td>tangens hiperboliczny</td>
+							<td>htan(2x)</td>
+						</tr>
+						<tr>
+							<td align="center">hctan</td>
+							<td>cotangens hiperboliczny</td>
+							<td>hctan(2x/3y)</td>
+						</tr>
+						<tr>
+							<td align="center">asin</td>
+							<td>arcus sinus</td>
+							<td>asin(x/pi)</td>
+						</tr>
+						<tr>
+							<td align="center">acos</td>
+							<td>arcus cosinus</td>
+							<td>acos(x-2)</td>
+						</tr>
+						<tr>
+							<td align="center">atan</td>
+							<td>arcus tangens</td>
+							<td>atan(2x)</td>
+						</tr>
+						<tr>
+							<td align="center">actan</td>
+							<td>arcus cotangens</td>
+							<td>actan(2x/3y)</td>
+						</tr>
+						<tr>
+							<td align="center">sqrt</td>
+							<td>pierwiastek kwadratowy</td>
+							<td>sqrt(2x/3y)</td>
+						</tr>
+						<tr>
+							<td align="center">ln</td>
+							<td>logarytm naturalny</td>
+							<td>ln(x-2)</td>
+						</tr>
+						<tr>
+							<td align="center">log</td>
+							<td>logarytm dziesiętny</td>
+							<td>log(x)</td>
+						</tr>
+						<tr>
+							<td align="center">exp</td>
+							<td>funkcja wykładnicza e^x</td>
+							<td>exp(x/2)</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+		</p>
+		
+		<h2 id="stale">1.4. Stałe</h2>
+		<p>
+			<center>
+				<table border="1" cellpadding="5">
+					<thead>
+						<tr>
+							<th>Stała</th>
+							<th>Znaczenie</th>
+							<th>Przykład użycia</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="center">e</td>
+							<td>liczba Eulera</td>
+							<td>e^x/2</td>
+						</tr>
+						<tr>
+							<td align="center">pi</td>
+							<td>liczba π</td>
+							<td>sin(x*pi/2)</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+		</p>
+		<p><br /><br /></p>
+    </body>
+</html>
