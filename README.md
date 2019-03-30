@@ -2,10 +2,10 @@
 
 2d / 3d function plotting tool.
 
+**[Download (Windows build)](https://zaak.github.io/tools/FVisualizer_v1.0.1.zip)**
+
 ![fv](https://cloud.githubusercontent.com/assets/803299/5882835/649fc5b4-a34d-11e4-803e-0d9b3ee158ac.png)
 
-
-This is some quite old C++/Qt code. Feel free to use.
 
 Copyright (c) 2010 Paweł Wiaderny
 
